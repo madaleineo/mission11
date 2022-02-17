@@ -73,3 +73,4 @@
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/bin/Debug/netcoreapp3.1/libman.json
