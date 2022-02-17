@@ -18,7 +18,7 @@ namespace onlinebookstore.Controllers
 
         public IActionResult Index(int pageNum = 1) // default set to one
         {
-            int numResults = 5;
+            int numResults = 10;
 
             var x = new BooksViewModel
             {
