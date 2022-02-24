@@ -28,6 +28,7 @@ namespace onlinebookstore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddRazorPages();
 
             services.AddDbContext<BookstoreContext>(options =>
             {
@@ -51,14 +52,29 @@ namespace onlinebookstore
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "Paging",
-                    pattern: "P{pageNum}",
-                    defaults: new {Controller = "Home", action = "Index" }
+            { // endpoints are executed in order
+
+                endpoints.MapControllerRoute("categorypage",
+                    "{bookCategory}/Page{pageNum}",
+                    new { Controller = "Home", action = "Index" }
                     );
 
+                endpoints.MapControllerRoute(
+                    name: "Paging",
+                    pattern: "Page{pageNum}",
+                    defaults: new { Controller = "Home", action = "Index", pageNum = 1 }
+                    );
+
+                endpoints.MapControllerRoute("category",
+                    "{bookCategory}",
+                    new { Controller = "Home", action = "Index", pageNum = 1 }
+                    );
+
+                
+
                 endpoints.MapDefaultControllerRoute();
+
+                endpoints.MapRazorPages();
             });
         }
     }
