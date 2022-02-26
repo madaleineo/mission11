@@ -26,8 +26,15 @@ using onlinebookstore.Models.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Views/_ViewImports.cshtml"
+using onlinebookstore.Infrastructure;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f400a24e4f1c1f8dbc87c0f761266a45e781e06b", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"df0a25d6db262ab7d22cacc1ff87603dbbdffd68", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"140bc5a1545a2a7dd5b76d5135c6d6e45270e369", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

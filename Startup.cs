@@ -28,7 +28,6 @@ namespace onlinebookstore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddRazorPages();
 
             services.AddDbContext<BookstoreContext>(options =>
             {
@@ -37,6 +36,11 @@ namespace onlinebookstore
 
             services.AddScoped<IOnlineBookstoreRepository, EFOnlineBookstoreRepository>();
 
+            services.AddRazorPages();
+
+            services.AddDistributedMemoryCache();
+            services.AddSession();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +52,7 @@ namespace onlinebookstore
             }
 
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

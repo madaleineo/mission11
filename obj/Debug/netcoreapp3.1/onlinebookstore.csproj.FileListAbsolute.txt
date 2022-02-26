@@ -76,3 +76,7 @@
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/bin/Debug/netcoreapp3.1/libman.json
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BookInfo.cshtml.g.cs
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Types/Default.cshtml.g.cs
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Pages/AddToCart.cshtml.g.cs
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_CartLayout.cshtml.g.cs
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs

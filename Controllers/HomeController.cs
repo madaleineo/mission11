@@ -30,7 +30,10 @@ namespace onlinebookstore.Controllers
 
                 PageInfo = new PageInfo
                 {
-                    TotalNumBooks = (bookCategory == null ? repo.Books.Count() : repo.Books.Where(x => x.Category == bookCategory).Count()),
+                    TotalNumBooks =
+                        (bookCategory == null
+                            ? repo.Books.Count()
+                            : repo.Books.Where(x => x.Category == bookCategory).Count()),
                     BooksPerPage = numResults,
                     CurrentPage = pageNum,
                 }
