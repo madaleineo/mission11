@@ -22,8 +22,6 @@ namespace onlinebookstore.Models
 
         public string AddressLine1 { get; set; }
 
-        [Required(ErrorMessage = "Please enter a name ")]
-
         public string AddressLine2 { get; set; }
 
         public string AddressLine3 { get; set; }
@@ -35,8 +33,6 @@ namespace onlinebookstore.Models
         [Required(ErrorMessage = "Please enter a state name ")]
 
         public string State { get; set; }
-
-        [Required(ErrorMessage = "Please enter a valid zipcode ")]
 
         public string Zip { get; set; }
 

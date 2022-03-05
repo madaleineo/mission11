@@ -43,7 +43,7 @@ namespace onlinebookstore.Controllers
                 repo.SaveCheckout(checkout);
                 basket.ClearBasket();
 
-                return View();
+                return RedirectToPage("/CheckoutComplete");
             }
             else
             {
