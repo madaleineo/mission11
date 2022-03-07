@@ -82,3 +82,4 @@
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Views/Checkout/Checkout.cshtml.g.cs
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Pages/CheckoutComplete.cshtml.g.cs
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/CartSummary/Default.cshtml.g.cs
