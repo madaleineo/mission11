@@ -16,13 +16,12 @@ namespace onlinebookstore.Controllers
 
         private Basket basket { get; set; }
 
-        public CheckoutController(ICheckoutRepository temp)
+        public CheckoutController(ICheckoutRepository temp, Basket b)
         {
             repo = temp;
+            basket = b;
         }
 
-
-        // GET: /<controller>/
         [HttpGet]
         public IActionResult Checkout()
         {
