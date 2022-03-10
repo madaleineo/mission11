@@ -1168,7 +1168,7 @@
       "outputPath": "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/madaleineosmun/.nuget/NuGet/NuGet.Config"
+        "/Users/madaleineosmun/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
