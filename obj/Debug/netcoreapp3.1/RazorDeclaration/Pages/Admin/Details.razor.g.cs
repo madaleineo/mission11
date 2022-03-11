@@ -53,9 +53,8 @@ using onlinebookstore.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/books")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/admin")]
-    public partial class Books : OwningComponentBase<IOnlineBookstoreRepository>
+    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/books/details/{id:long}")]
+    public partial class Details : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -63,32 +62,23 @@ using onlinebookstore.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 57 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/Books.razor"
+#line 52 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/Details.razor"
        
 
-    public IOnlineBookstoreRepository repo => Service;
+    [Inject]
+    public IOnlineBookstoreRepository repo { get; set; }
 
-    public IEnumerable<Book> BookData { get; set; }
+    [Parameter]
+    public long Id { get; set; }
 
-    protected async override Task OnInitializedAsync()
-    {
-        await UpdateData();
-    }
+    public Book book { get; set; }
 
-    public async Task UpdateData()
-    {
-        BookData = await repo.Books.ToListAsync();
-    }
+        protected override void OnParametersSet()
+        {
+            book = repo.Books.FirstOrDefault(x => x.BookId == Id);
+        }
 
-    public string GetDetailsUrl(long id) => $"/admin/books/details/{id}";
-
-    public string GetEditUrl(long id) => $"/admin/books/edit/{id}";
-
-    public async Task RemoveBook (Book b)
-    {
-        repo.DeleteProject(b);
-        await UpdateData();
-    }
+    public string EditUrl => $"/admin/books/edit/{book.BookId}";
 
 
 

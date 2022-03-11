@@ -99,3 +99,5 @@
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Index.cshtml.g.cs
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/CheckoutTable.razor.g.cs
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/CheckoutTable.razor.g.cs
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Details.razor.g.cs
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Details.razor.g.cs
