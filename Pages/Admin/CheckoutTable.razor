@@ -36,7 +36,7 @@
         else
             {
                 <tr>
-                    <td colspan="5" class="text-center">No Orders??</td>
+                    <td colspan="5" class="text-center">No Orders Have Been Shipped</td>
                 </tr>
             }
     </tbody>
@@ -54,6 +54,6 @@
     public string ButtonLabel { get; set; } = "Shipped";
 
     [Parameter]
-    public EventCallback<int> Shipped { get; set; }
+    public EventCallback<int> OrderShipped { get; set; }
 
 }

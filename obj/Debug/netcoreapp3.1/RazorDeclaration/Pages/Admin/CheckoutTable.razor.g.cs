@@ -74,7 +74,7 @@ using onlinebookstore.Models;
     public string ButtonLabel { get; set; } = "Shipped";
 
     [Parameter]
-    public EventCallback<int> Shipped { get; set; }
+    public EventCallback<int> OrderShipped { get; set; }
 
 
 #line default
