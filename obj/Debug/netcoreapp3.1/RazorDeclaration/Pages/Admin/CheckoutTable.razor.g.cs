@@ -53,8 +53,7 @@ using onlinebookstore.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/checkouts")]
-    public partial class Checkouts : OwningComponentBase<ICheckoutRepository>
+    public partial class CheckoutTable : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -62,38 +61,20 @@ using onlinebookstore.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 11 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/Checkouts.razor"
-      
+#line 45 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/CheckoutTable.razor"
+       
 
-    public ICheckoutRepository repo => Service;
+    [Parameter]
+    public string TableTitle { get; set; } = "Order Status";
 
-    public IEnumerable<Checkout> AllOrders { get; set; }
-    public IEnumerable<Checkout> NotShipped { get; set; }
-    public IEnumerable<Checkout> Shipped { get; set; }
+    [Parameter]
+    public IEnumerable<Checkout> Checkouts { get; set; }
 
-    protected async override Task OnInitializedAsync()
-    {
-        await UpdateData();
-    }
+    [Parameter]
+    public string ButtonLabel { get; set; } = "Shipped";
 
-    public async Task UpdateData()
-    {
-        AllOrders = await repo.Checkouts.ToListAsync();
-        NotShipped = AllOrders.Where(x => !x.OrderShipped);
-        Shipped = AllOrders.Where(x => x.OrderShipped);
-    }
-
-
-    public void ShippingInfo(int id) => UpdateShipping(id, true);
-    public void ResetShipping(int id) => UpdateShipping(id, false);
-
-
-    private void UpdateShipping(int id, bool shipped)
-    {
-        Checkout c = repo.Checkouts.FirstOrDefault(x => x.CheckoutId == id);
-        c.OrderShipped = shipped;
-        repo.SaveCheckout(c);
-    }
+    [Parameter]
+    public EventCallback<int> Shipped { get; set; }
 
 
 #line default

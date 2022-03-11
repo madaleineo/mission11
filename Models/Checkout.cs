@@ -40,7 +40,8 @@ namespace onlinebookstore.Models
 
         public string Country { get; set; }
 
-
+        [BindNever]
+        public bool OrderShipped { get; set; } = false;
 
     }
 }

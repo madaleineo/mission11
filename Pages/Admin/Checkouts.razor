@@ -1,8 +1,43 @@
 ﻿@page "/admin/checkouts"
+@inherits OwningComponentBase<ICheckoutRepository>
+
+<CheckoutTable TableTitle="Not Shipped" Checkouts="NotShipped" ButtonLabel="Shipped" Shipped="ShippingInfo"></CheckoutTable>
+
+<CheckoutTable TableTitle="Shipped" Checkouts="Shipped" ButtonLabel="Reset" Shipped="ResetShipping"></CheckoutTable>
+
+<button class="btn btn-info" @onclick="@(x => UpdateData())">Refresh Data</button>
 
 
-<h3>Checkouts</h3>
+@code{
 
-@code {
+    public ICheckoutRepository repo => Service;
+
+    public IEnumerable<Checkout> AllOrders { get; set; }
+    public IEnumerable<Checkout> NotShipped { get; set; }
+    public IEnumerable<Checkout> Shipped { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        await UpdateData();
+    }
+
+    public async Task UpdateData()
+    {
+        AllOrders = await repo.Checkouts.ToListAsync();
+        NotShipped = AllOrders.Where(x => !x.OrderShipped);
+        Shipped = AllOrders.Where(x => x.OrderShipped);
+    }
+
+
+    public void ShippingInfo(int id) => UpdateShipping(id, true);
+    public void ResetShipping(int id) => UpdateShipping(id, false);
+
+
+    private void UpdateShipping(int id, bool shipped)
+    {
+        Checkout c = repo.Checkouts.FirstOrDefault(x => x.CheckoutId == id);
+        c.OrderShipped = shipped;
+        repo.SaveCheckout(c);
+    }
 
 }
