@@ -63,7 +63,7 @@ using onlinebookstore.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 79 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/Editor.razor"
+#line 76 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/Editor.razor"
        
 
     [Parameter]
@@ -95,6 +95,8 @@ using onlinebookstore.Models;
         {
             repo.SaveBook(b);
         }
+
+        NavManager.NavigateTo("/admin/books");
     }
 
     [Inject]
