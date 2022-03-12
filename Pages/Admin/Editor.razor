@@ -9,7 +9,7 @@
 
 <h3 class="bg-@ThemeColor text-white text-center p-1">@TitleText a Book</h3>
 
-<EditForm Model="b" OnValidSubmit="SaveBook">
+<EditForm Model="b" OnValidSubmit="SaveBook" class="shadow p-3 mb-5 bg-body rounded">
 
     <DataAnnotationsValidator></DataAnnotationsValidator>
 
@@ -67,8 +67,8 @@
     </div>
 
 
-    <button type="submit" class="btn btn-@ThemeColor">Save</button>
-    <NavLink class="btn btn-secondary" href="/admin/books">Cancel</NavLink>
+    <button type="submit" class="btn btn-@ThemeColor shadow mb-2 rounded">Save</button>
+    <NavLink class="btn btn-secondary shadow mb-2 rounded" href="/admin/books">Cancel</NavLink>
 
 </EditForm>
 

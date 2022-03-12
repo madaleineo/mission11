@@ -2,8 +2,7 @@
 @page "/admin"
 @inherits OwningComponentBase<IOnlineBookstoreRepository>
 
-
-<table class="table table-sm table-striped table-bordered">
+<table class="table table-sm table-striped table-bordered shadow p-3 mb-5 bg-body rounded">
 
     <thead>
         <tr>
@@ -53,7 +52,8 @@
     </tbody>
 </table>
 
-<NavLink class="btn btn-primary" href="/admin/books/create">Add New Book</NavLink>
+<NavLink class="btn btn-primary shadow p-3 mb-5 rounded" href="/admin/books/create">Add New Book</NavLink>
+<button type="button" class="btn btn-danger shadow p-3 mb-5 rounded" data-bs-toggle="popover" title="Delete Info" data-bs-content="Please make sure you only delete records that you are sure about deleting. You will not be able to get them back.">Click for Delete Warning</button>
 
 
 @code {
