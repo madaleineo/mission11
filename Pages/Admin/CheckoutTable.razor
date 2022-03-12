@@ -11,9 +11,9 @@
             @foreach (Checkout c in Checkouts)
             {
                 <tr>
-                    <td>@c.Name</td>
-                    <td>@c.Zip</td>
-                    <th>Project</th>
+                    <td  class="user-select-all">@c.Name</td>
+                    <td  class="user-select-all">@c.Zip</td>
+                    <th>Book Title</th>
                     <th>Quantity</th>
 
                     <td>
@@ -27,8 +27,8 @@
                 {
                     <tr>
                         <td colspan="2"></td>
-                        <td>@bli.Book.Title</td>
-                        <td>@bli.Quantity</td>
+                        <td class="user-select-all">@bli.Book.Title</td>
+                        <td class="user-select-all">@bli.Quantity</td>
                     </tr>
                 }
             }

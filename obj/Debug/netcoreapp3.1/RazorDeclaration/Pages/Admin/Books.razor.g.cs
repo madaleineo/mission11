@@ -63,7 +63,7 @@ using onlinebookstore.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 63 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/Books.razor"
+#line 59 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/Books.razor"
        
 
     public IOnlineBookstoreRepository repo => Service;
@@ -84,7 +84,7 @@ using onlinebookstore.Models;
 
     public string GetEditUrl(long id) => $"/admin/books/edit/{id}";
 
-    public async Task RemoveBook (Book b)
+    public async Task RemoveBook(Book b)
     {
         repo.DeleteProject(b);
         await UpdateData();

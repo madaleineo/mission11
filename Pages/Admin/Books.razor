@@ -16,16 +16,16 @@
 
     <tbody>
 
-        @if (BookData?.Count()>0)
+        @if (BookData?.Count() > 0)
         {
             //list books
             @foreach (Book b in BookData)
             {
                 <tr>
-                    <td>@b.BookId</td>
-                    <td>@b.Title</td>
-                    <td>@b.Author</td>
-                    <td>@b.Category</td>
+                    <td  class="user-select-all">@b.BookId</td>
+                    <td  class="user-select-all">@b.Title</td>
+                    <td  class="user-select-all">@b.Author</td>
+                    <td  class="user-select-all">@b.Category</td>
 
                     <td>
                         <NavLink class="btn btn-info btn-sm" href="@GetDetailsUrl(b.BookId)">Details</NavLink>
@@ -48,7 +48,7 @@
                 <td colspan="5" class="text-center">No Books</td>
             </tr>
         }
-        
+
     </tbody>
 </table>
 
@@ -76,7 +76,7 @@
 
     public string GetEditUrl(long id) => $"/admin/books/edit/{id}";
 
-    public async Task RemoveBook (Book b)
+    public async Task RemoveBook(Book b)
     {
         repo.DeleteProject(b);
         await UpdateData();
