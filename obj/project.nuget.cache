@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hlQkUna3YMs8xy3lQ0yhc4LHslJvv+e3OhA/eOTtce5EUDcaLzD8QoDWE0zfwWy8R3OcYnyAgP6G6T4coZT5zA==",
+  "dgSpecHash": "a/v06WFs6EKZuOfvrf8MJyUtkI2RBiSijU0ownk0LXx57RHa3cRitGz9BRy4UetNWPA7sUI/auzrcBg3EEB9kw==",
   "success": true,
   "projectFilePath": "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/onlinebookstore.csproj",
   "expectedPackageFiles": [
+    "/Users/madaleineosmun/.nuget/packages/microsoft.aspnetcore.cryptography.internal/3.1.22/microsoft.aspnetcore.cryptography.internal.3.1.22.nupkg.sha512",
+    "/Users/madaleineosmun/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.22/microsoft.aspnetcore.cryptography.keyderivation.3.1.22.nupkg.sha512",
+    "/Users/madaleineosmun/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/3.1.22/microsoft.aspnetcore.identity.entityframeworkcore.3.1.22.nupkg.sha512",
     "/Users/madaleineosmun/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/madaleineosmun/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "/Users/madaleineosmun/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -24,6 +27,8 @@
     "/Users/madaleineosmun/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.22/microsoft.extensions.dependencyinjection.3.1.22.nupkg.sha512",
     "/Users/madaleineosmun/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.22/microsoft.extensions.dependencyinjection.abstractions.3.1.22.nupkg.sha512",
     "/Users/madaleineosmun/.nuget/packages/microsoft.extensions.dependencymodel/3.1.6/microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
+    "/Users/madaleineosmun/.nuget/packages/microsoft.extensions.identity.core/3.1.22/microsoft.extensions.identity.core.3.1.22.nupkg.sha512",
+    "/Users/madaleineosmun/.nuget/packages/microsoft.extensions.identity.stores/3.1.22/microsoft.extensions.identity.stores.3.1.22.nupkg.sha512",
     "/Users/madaleineosmun/.nuget/packages/microsoft.extensions.logging/3.1.22/microsoft.extensions.logging.3.1.22.nupkg.sha512",
     "/Users/madaleineosmun/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.22/microsoft.extensions.logging.abstractions.3.1.22.nupkg.sha512",
     "/Users/madaleineosmun/.nuget/packages/microsoft.extensions.options/3.1.22/microsoft.extensions.options.3.1.22.nupkg.sha512",
