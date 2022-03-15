@@ -109,3 +109,5 @@
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
 /Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/bin/Debug/netcoreapp3.1/Bookstore.sqlite
+/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/bin/Debug/netcoreapp3.1/Identity.sqlite

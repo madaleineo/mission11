@@ -63,7 +63,7 @@ using onlinebookstore.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 59 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/Books.razor"
+#line 58 "/Users/madaleineosmun/code/junior-core/onlinebookstore/onlinebookstore/Pages/Admin/Books.razor"
        
 
     public IOnlineBookstoreRepository repo => Service;
